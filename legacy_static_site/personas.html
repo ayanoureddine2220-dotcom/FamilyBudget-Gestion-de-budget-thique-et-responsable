@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choisir mon profil — FamilyBudget+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="logo" href="index.html">FamilyBudget<span>+</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="analysis.html">Analyse</a>
+      <a href="goals.html">Objectifs</a>
+      <a href="export.html">Exports</a>
+      <a href="personas.html">Choisir profil</a>
+      <a href="premium.html">Premium</a>
+      <a href="premium-account.html">Compte Premium</a>
+    </nav>
+    <a class="btn btn-primary" href="signup.html">Mon compte</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 style="margin:0 0 14px">Choisir mon profil</h1>
+      <p style="color:#6b7280;margin:0 0 18px">Personnalisez l’expérience selon votre situation.</p>
+      <div class="card-grid" id="personaGrid">
+        <article class="card persona-card" data-persona="famille">
+          <div class="card-emoji">👨‍👩‍👧</div>
+          <h3>Familles</h3>
+          <p style="color:#6b7280">Organiser les dépenses du foyer, ensemble.</p>
+        </article>
+        <article class="card persona-card" data-persona="parent_seul">
+          <div class="card-emoji">👩</div>
+          <h3>Parent seul</h3>
+          <p style="color:#6b7280">Simplifier le quotidien et garder le cap.</p>
+        </article>
+        <article class="card persona-card" data-persona="seniors">
+          <div class="card-emoji">👵</div>
+          <h3>Seniors</h3>
+          <p style="color:#6b7280">Gérer sereinement les revenus et les sorties.</p>
+        </article>
+        <article class="card persona-card" data-persona="jeunes_couples">
+          <div class="card-emoji">🎓</div>
+          <h3>Jeunes couples</h3>
+          <p style="color:#6b7280">Construire des projets sans stress financier.</p>
+        </article>
+      </div>
+      <div class="toast" id="toast" aria-hidden="true"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>FamilyBudget+ — Conçu pour votre sérénité financière.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

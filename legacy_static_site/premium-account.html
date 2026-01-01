@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mon compte Premium — FamilyBudget+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="logo" href="index.html">FamilyBudget<span>+</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="analysis.html">Analyse</a>
+      <a href="goals.html">Objectifs</a>
+      <a href="export.html">Exports</a>
+      <a href="personas.html">Choisir profil</a>
+      <a href="premium.html">Premium</a>
+      <a href="premium-account.html">Compte Premium</a>
+    </nav>
+    <a class="btn btn-primary" href="signup.html">Mon compte</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 style="margin:0 0 14px">Mon compte Premium</h1>
+      <p id="planInfo" style="color:#6b7280;margin:0 0 18px">Vérifiez l’état de votre abonnement Premium.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Statut du plan</h3>
+          <p id="planStatus" style="font-weight:700">—</p>
+        </article>
+        <article class="card">
+          <h3>Avantages</h3>
+          <p style="color:#6b7280">Analyse avancée, exports illimités, alertes intelligentes, assistance prioritaire.</p>
+        </article>
+        <article class="card">
+          <h3>Actions</h3>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a id="activatePremium" class="btn btn-primary" href="signup.html?plan=premium">Activer Premium</a>
+            <button id="deactivatePremium" class="btn" type="button">Désactiver Premium</button>
+            <a id="managePremium" class="btn btn-secondary" href="premium.html">Gérer mon plan</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="toast" id="toast" aria-hidden="true"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>FamilyBudget+ — Conçu pour votre sérénité financière.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

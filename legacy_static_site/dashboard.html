@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableau de bord — FamilyBudget+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="logo" href="index.html">FamilyBudget<span>+</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="analysis.html">Analyse</a>
+      <a href="goals.html">Objectifs</a>
+      <a href="export.html">Exports</a>
+      <a href="personas.html">Choisir profil</a>
+      <a href="premium.html">Premium</a>
+      <a href="premium-account.html">Compte Premium</a>
+    </nav>
+    <a class="btn btn-primary" href="signup.html">Mon compte</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 style="margin:0 0 14px">Tableau de bord</h1>
+      <p style="color:#6b7280;margin:0 0 18px">Vue d’ensemble simple et claire.</p>
+      <div class="card-grid">
+        <article class="card"><h3>Dépenses du mois</h3><p>1 450 €</p></article>
+        <article class="card"><h3>Revenus</h3><p>2 200 €</p></article>
+        <article class="card"><h3>Économies</h3><p>750 €</p></article>
+        <article class="card"><h3>Reste à vivre</h3><p>1 050 €</p></article>
+      </div>
+      <div class="demo" style="margin-top:20px">
+        <h3>Aperçu par catégories</h3>
+        <canvas id="budgetChart"></canvas>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>FamilyBudget+ — Conçu pour votre sérénité financière.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#e3f2fd"/>
+<stop offset="1" stop-color="#f1faf6"/>
+</linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#6fb7e9"/>
+<stop offset="1" stop-color="#4fb388"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<g transform="translate(200,160)">
+<rect x="0" y="0" width="800" height="480" rx="36" fill="#fff"/>
+<g transform="translate(40,40)">
+<rect x="0" y="0" width="340" height="180" rx="16" fill="#f7f3ee"/>
+<rect x="360" y="0" width="340" height="180" rx="16" fill="#eef7f4"/>
+<rect x="0" y="200" width="700" height="20" rx="10" fill="#e6eef7"/>
+<rect x="0" y="240" width="520" height="20" rx="10" fill="#e6eef7"/>
+<rect x="0" y="280" width="620" height="20" rx="10" fill="#e6eef7"/>
+<circle cx="720" cy="260" r="80" fill="url(#accent)"/>
+</g>
+</g>
+<text x="50%" y="92%" text-anchor="middle" fill="#1f2937" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="28">Illustration FamilyBudget+</text>
+</svg>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FamilyBudget+ Premium</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="logo" href="index.html">FamilyBudget<span>+</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="analysis.html">Analyse</a>
+      <a href="goals.html">Objectifs</a>
+      <a href="export.html">Exports</a>
+      <a href="personas.html">Choisir profil</a>
+      <a href="premium.html">Premium</a>
+      <a href="premium-account.html">Compte Premium</a>
+    </nav>
+    <a class="btn btn-primary" href="signup.html">Mon compte</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Offre Premium">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Passez à Premium: plus de clarté, plus de sérénité.</h1>
+        <p>Des fonctionnalités avancées pensées pour les familles: analyse détaillée, exports illimités, alertes intelligentes et assistance prioritaire.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" id="upgradeBtn" href="signup.html?plan=premium" rel="noopener">Essayer Premium</a>
+          <a class="btn btn-secondary btn-lg" href="dashboard.html">Voir le tableau de bord</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/premium.svg" alt="Famille sereine profitant d’une gestion financière claire">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Ce que vous obtenez</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Analyse avancée</h3><p>Vue détaillée par catégorie, période et tendance.</p></article>
+        <article class="card"><h3>Exports illimités</h3><p>PDF et Excel pour partager ou archiver.</p></article>
+        <article class="card"><h3>Alertes intelligentes</h3><p>Notifications bienveillantes pour éviter les dépassements.</p></article>
+        <article class="card"><h3>Assistance prioritaire</h3><p>Support rapide et utile, sans pression.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Tarifs simples</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Gratuit</h3>
+          <p>Suivi de base, visualisation simple.</p>
+          <a class="btn btn-secondary" href="signup.html">Commencer</a>
+        </article>
+        <article class="card">
+          <h3>Premium</h3>
+          <p>Analyse avancée, exports illimités, alertes intelligentes.</p>
+          <a class="btn btn-primary" id="upgradeBtn2" href="signup.html?plan=premium" rel="noopener">Passer à Premium</a>
+        </article>
+      </div>
+      <p style="color:#6b7280;margin-top:10px">Sans engagement. Annulez à tout moment.</p>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" aria-hidden="true"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>FamilyBudget+ — Conçu pour votre sérénité financière.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

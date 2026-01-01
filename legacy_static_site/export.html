@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exports PDF & Excel — FamilyBudget+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="logo" href="index.html">FamilyBudget<span>+</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="analysis.html">Analyse</a>
+      <a href="goals.html">Objectifs</a>
+      <a href="export.html">Exports</a>
+      <a href="personas.html">Choisir profil</a>
+      <a href="premium.html">Premium</a>
+      <a href="premium-account.html">Compte Premium</a>
+    </nav>
+    <a class="btn btn-primary" href="signup.html">Mon compte</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 style="margin:0 0 14px">Exporter vos données</h1>
+      <p style="color:#6b7280;margin:0 0 18px">Téléchargez un aperçu en PDF ou Excel.</p>
+      <div class="card" style="overflow:auto">
+        <table id="dataTable" style="width:100%;border-collapse:collapse">
+          <thead>
+            <tr>
+              <th style="text-align:left;padding:8px;border-bottom:1px solid #e5e7eb">Date</th>
+              <th style="text-align:left;padding:8px;border-bottom:1px solid #e5e7eb">Catégorie</th>
+              <th style="text-align:left;padding:8px;border-bottom:1px solid #e5e7eb">Montant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:8px">2025-12-01</td><td style="padding:8px">Courses</td><td style="padding:8px">85.40</td></tr>
+            <tr><td style="padding:8px">2025-12-02</td><td style="padding:8px">Transport</td><td style="padding:8px">30.00</td></tr>
+            <tr><td style="padding:8px">2025-12-03</td><td style="padding:8px">Logement</td><td style="padding:8px">900.00</td></tr>
+            <tr><td style="padding:8px">2025-12-04</td><td style="padding:8px">Loisirs</td><td style="padding:8px">45.00</td></tr>
+            <tr><td style="padding:8px">2025-12-05</td><td style="padding:8px">Éducation</td><td style="padding:8px">120.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:14px">
+        <button id="exportPdf" class="btn btn-secondary">Exporter en PDF</button>
+        <button id="exportExcel" class="btn btn-primary">Exporter en Excel</button>
+      </div>
+      <div class="toast" id="toast" aria-hidden="true"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>FamilyBudget+ — Conçu pour votre sérénité financière.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
