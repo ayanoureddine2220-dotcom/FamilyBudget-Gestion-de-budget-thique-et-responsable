@@ -158,6 +158,4 @@ Projet académique / personnel autour de la **finance responsable et de la techn
 
 > *FamilyBudget — Gérer aujourd’hui pour sécuriser demain.*
 
-```
-```
 # FamilyBudget-Gestion-de-budget-thique-et-responsable
