@@ -114,45 +114,58 @@ const Chatbot = () => {
   ];
 
   return (
-    <div className="chatbot-root">
-      <button className="chatbot-trigger" onClick={togglePanel}>💬 Aide</button>
+    <>
+      <button className="chatbot-toggler" onClick={togglePanel}>
+        {isOpen ? (
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        ) : (
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+        )}
+      </button>
+
       {isOpen && (
-        <div className="chatbot-panel open">
+        <div className="chatbot-window">
           <div className="chatbot-header">
-            <div>
-              <div id="chatbotTitle">FamilyCoach</div>
-              <div className="chatbot-header-sub">Assistant budget <span className="chatbot-badge">IA Ready</span></div>
-            </div>
+            <h3>
+              <span>FamilyCoach</span>
+              <span style={{ fontSize: '0.7em', opacity: 0.8, fontWeight: 400 }}>IA Ready</span>
+            </h3>
             <button className="chatbot-close" onClick={togglePanel}>×</button>
           </div>
-          <div className="chatbot-body">
-            <div className="chatbot-messages">
-              {messages.map((m, i) => (
-                <div key={i} className={`chatbot-message ${m.who}`}>
-                  <div className={`chatbot-avatar ${m.who}`}>{m.who === 'user' ? '🙂' : '🤝'}</div>
-                  <div className="chatbot-bubble" dangerouslySetInnerHTML={{ __html: m.text }}></div>
-                </div>
-              ))}
-              <div ref={messagesEndRef} />
-            </div>
-            <div className="chatbot-quick">
-              {suggestions.map((s, i) => (
-                <button key={i} className="chatbot-chip" onClick={() => handleSend(s.v)}>{s.k}</button>
-              ))}
-            </div>
+
+          <div className="chatbot-messages">
+            {messages.map((m, i) => (
+              <div key={i} className={`message ${m.who}`}>
+                <div dangerouslySetInnerHTML={{ __html: m.text }} />
+              </div>
+            ))}
+            <div ref={messagesEndRef} />
           </div>
-          <div className="chatbot-input">
+
+          <div className="chatbot-suggestions">
+            {suggestions.map((s, i) => (
+              <button key={i} className="suggestion-btn" onClick={() => handleSend(s.v)}>
+                {s.k}
+              </button>
+            ))}
+          </div>
+
+          <div className="chatbot-input-area">
             <input 
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend(input)}
               placeholder="Posez votre question..." 
             />
-            <button className="btn btn-primary" onClick={() => handleSend(input)}>Envoyer</button>
+            <button className="chatbot-send" onClick={() => handleSend(input)} disabled={!input.trim()}>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+              </svg>
+            </button>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
