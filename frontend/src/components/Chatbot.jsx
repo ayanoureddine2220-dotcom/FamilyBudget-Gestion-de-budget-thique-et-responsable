@@ -46,7 +46,7 @@ const Chatbot = () => {
   };
 
   const callGemini = async (text) => {
-    const apiKey = localStorage.getItem('gemini_api_key') || 'AIzaSyDfAxjgBCKK4nVNt17riLd-UB9avnonNls';
+    const apiKey = localStorage.getItem('gemini_api_key') || 'api_key';
     if (!apiKey) return null;
 
     try {
